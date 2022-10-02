@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;500&display=swap');
+
+:root{
+    --color-blue: #14FFEC;
+    --font-corpo: 'Montserrat Alternates', sans-serif;
+    --cor-pagina : #212121;
+    --peso-fonte: 100;
+    --cor-branca: #FFF;
+}
+
+
+body{
+    font-family: var(--font-corpo);
+    background: var(--cor-pagina);
+    font-weight: var(--peso-fonte);
+    color: var(--color-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+} 
+
+h1{
+    font-size: clamp(4vw, 6.5vw, 10vw);
+    font-weight: 500;
+
+}
+
+h2{
+    font-size: clamp(3vw, 4.5vw, 8vw);
+    font-weight: 500;
+}
+
+h3{
+    font-size: clamp(2vw, 3.25vw, 5vw);
+    margin-top: 8%;
+}
+
+.mensagem{
+    font-size: 2vw;
+    margin-top: 2%;
+}
+
+.box{
+    border: 2px solid var(--cor-branca);
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+    color: var(--cor-branca);
+}
+
+.btn-jogar{
+    width: 25%;
+    height: 15%;
+    margin-top: 4%;
+    font-size: 2vw;
+    color: var(--cor-branca);
+    background-color: var(--color-blue);
+    font-family: var(--font-corpo);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(00, 00, 00);
+    transition: 1s;
+    outline: none;
+}
+
+.btn-jogar:hover{
+    transform: scale(1.1);
+    box-shadow: 9px 9px 5px rgb(00, 00, 00);
+}
+
+.btn-jogar:focus{
+    border: 3px solid #FFFF00;
+}
