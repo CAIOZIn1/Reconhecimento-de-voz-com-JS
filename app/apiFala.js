@@ -12,7 +12,6 @@ recognition.addEventListener('result', (evento) => {
     verificaChute(chute)
 })
 
-
 function exibeChuteNaTela(chute) {
     elementoChute.innerHTML = `
     <div> Você disse: </div>
